@@ -19,11 +19,168 @@
         <div id="advanced-search">
             Advanced Search
         </div>
-        <div class="con1">
-            <div class="row1">
-                <div>Find pages with...</div> 
-                <div class="right">To do this in the search box.</div> 
+        <div class="row">
+            <div class="left">Find pages with...</div>
+            <div class="empty"></div>
+            <div class="right">To do this in the search box.</div>
+        </div>
+        <div class="row">
+            <div class="left">all these words:</div>
+            <input type="text" class="fill">
+            <div class="right">Type the important words: tri-colour rat terrier</div>
+        </div>
+        <div class="row">
+            <div class="left">this exact word or phrase:</div>
+            <input type="text" class="fill">
+            <div class="right">Put exact words in quotes: "rat terrier"</div>
+        </div>
+        <div class="row">
+            <div class="left">any of these words:</div>
+            <input type="text" class="fill">
+            <div class="right">Type OR between all the words you want: miniature OR standard</div>
+        </div>
+        <div class="row">
+            <div class="left">none of these words:</div>
+            <input type="text" class="fill">
+            <div class="right">Put a minus sign just before words that you don't want: -rodent, -"Jack Russell"</div>
+        </div>
+        <div class="row" style="border-bottom: 2px solid grey;">
+            <div class="left">numbers ranging from:</div>
+            <input type="text" class="halfill">
+            <div class="hd">to</div>
+            <input type="text" class="halfill">
+            <div class="right">Put two full stops between the numbers and add a unit of measurement: 10..35 kg, £300..£500, 2010..2011
             </div>
         </div>
+        <div class="row">
+            <div class="left">Then narrow your results by...</div>
+        </div>
+        <div class="row">
+            <div class="left">language:</div>
+            <select name="lang" id="dropdown" class="fill">
+                <option value="any language">Any Language</option>
+                <option value="Afrikaans">Afrikaans</option>
+                <option value="Albanian">Albanian</option>
+                <option value="Arabic">Arabic</option>
+                <option value="Armenian">Armenian</option>
+                <option value="Basque">Basque</option>
+                <option value="Bengali">Bengali</option>
+                <option value="Bulgarian">Bulgarian</option>
+                <option value="Catalan">Catalan</option>
+                <option value="Cambodian">Cambodian</option>
+                <option value="Chinese (Mandarin)">Chinese (Mandarin)</option>
+                <option value="Croatian">Croatian</option>
+                <option value="Czech">Czech</option>
+                <option value="Danish">Danish</option>
+                <option value="Dutch">Dutch</option>
+                <option value="English">English</option>
+                <option value="Estonian">Estonian</option>
+                <option value="Fiji">Fiji</option>
+                <option value="Finnish">Finnish</option>
+                <option value="French">French</option>
+                <option value="Georgian">Georgian</option>
+                <option value="German">German</option>
+                <option value="Greek">Greek</option>
+                <option value="Gujarati">Gujarati</option>
+                <option value="Hebrew">Hebrew</option>
+                <option value="Hindi">Hindi</option>
+                <option value="Hungarian">Hungarian</option>
+                <option value="Icelandic">Icelandic</option>
+                <option value="Indonesian">Indonesian</option>
+                <option value="Irish">Irish</option>
+                <option value="Italian">Italian</option>
+                <option value="Japanese">Japanese</option>
+                <option value="Javanese">Javanese</option>
+                <option value="Korean">Korean</option>
+                <option value="Latin">Latin</option>
+                <option value="Latvian">Latvian</option>
+                <option value="Lithuanian">Lithuanian</option>
+                <option value="Macedonian">Macedonian</option>
+                <option value="Malay">Malay</option>
+                <option value="Malayalam">Malayalam</option>
+                <option value="Maltese">Maltese</option>
+                <option value="Maori">Maori</option>
+                <option value="Marathi">Marathi</option>
+                <option value="Mongolian">Mongolian</option>
+                <option value="Nepali">Nepali</option>
+                <option value="Norwegian">Norwegian</option>
+                <option value="Persian">Persian</option>
+                <option value="Polish">Polish</option>
+                <option value="Portuguese">Portuguese</option>
+                <option value="Punjabi">Punjabi</option>
+                <option value="Quechua">Quechua</option>
+                <option value="Romanian">Romanian</option>
+                <option value="Russian">Russian</option>
+                <option value="Samoan">Samoan</option>
+                <option value="Serbian">Serbian</option>
+                <option value="Slovak">Slovak</option>
+                <option value="Slovenian">Slovenian</option>
+                <option value="Spanish">Spanish</option>
+                <option value="Swahili">Swahili</option>
+                <option value="Swedish ">Swedish </option>
+                <option value="Tamil">Tamil</option>
+                <option value="Tatar">Tatar</option>
+                <option value="Telugu">Telugu</option>
+                <option value="Thai">Thai</option>
+                <option value="Tibetan">Tibetan</option>
+                <option value="Tonga">Tonga</option>
+                <option value="Turkish">Turkish</option>
+                <option value="Ukrainian">Ukrainian</option>
+                <option value="Urdu">Urdu</option>
+                <option value="Uzbek">Uzbek</option>
+                <option value="Vietnamese">Vietnamese</option>
+                <option value="Welsh">Welsh</option>
+                <option value="Xhosa">Xhosa</option>
+            </select>
+            <div class="right">Find pages in the language that you select.</div>
+        </div>
+        <div class="row">
+            <div class="left">region:</div>
+            <select name="region" id="dropdown" class="fill">
+                <option value="Any Region"> Any Region</option>
+                <option value="jo">Jordan</option>
+                <option value="SUA">Saudi Arabia</option>
+            </select>
+            <div class="right">Find pages in the language that you select.</div>
+        </div>
+        <div class="row">
+            <div class="left">site or domain:</div>
+            <input type="text" class="fill">
+            <div class="right">Search one site (like wikipedia.org ) or limit your results to a domain like .edu, .org or .gov</div>
+        </div>
+        <div class="row">
+            <div class="left">terms appearing:</div>
+            <select name="placeinpage" id="dropdown" class="fill">
+                <option value="Anywhere in the page" >Anywhere in the page</option>
+                <option value="title">In the title of the page</option>
+                <option value="text">In the text of the page</option>
+                <option value="url">In the url of the page</option>
+                <option value="links">In links to the page</option>
+            </select>
+            <div class="right">Search for terms in the whole page, page title or web address, or links to the page you're looking for.</div>
+        </div>
+        <div class="row">
+            <div class="left"><a href="https://support.google.com/websearch?p=adv_safesearch&hl=en">SafeSearch:</a></div>
+            <select name="safe" id="dropdown" class="fill">
+                <option value="unsafe">Show explicit result</option>
+                <option value="safe">Don't Show explicit result</option>
+            </select>
+            <div class="right">Tell <a href="https://support.google.com/websearch?p=adv_safesearch&hl=en">SafeSearch</a> whether to filter sexually explicit content.</div>
+        </div>
+        <div class="row">
+            <div class="left">file type:</div>
+            <select name="format" id="dropdown" class="fill">
+                <option value="any">Any format</option>
+            </select>
+            <div class="right">Find pages in the format that you prefer.</div>
+        </div>
+        <div class="row">
+            <div class="left"><a href="https://support.google.com/websearch?p=ws_images_usagerights&hl=en">usage rights:</a></div>
+            <select name="usager" id="dropdown" class="fill">
+                <option value="not filterd">Not filterd by lices</option>
+            </select>
+            <div class="right">Find pages that you are free to use yourself.</div>
+        </div>
+        <div class="row" style="border-bottom: 2px solid grey;"><input type="submit" value="google advanced search" class="submit"></div>
     </body>
 </htm>

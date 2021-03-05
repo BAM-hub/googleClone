@@ -39,11 +39,47 @@ body{
     padding: 15px;
     border-bottom: 1px solid #cccc;
 }
-.row1{
+.row{
     display: flex;
-    border: 10px solid black;
+    width: 80%;
+    margin-left: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.empty{
+    width: 50%;
+    float: right;
 }
 .right{
-    border: 2px solid gray;
-    margin-right: 0px;
+    width: 27%;
+    margin-left: 10px;
+    float: right;
+    font-size: 13px;
+}
+.left{
+    width: 17%;
+    margin-right: 10px;
+}
+.fill{
+    width: 50%;
+    height: 20px;
+}
+.halfill{
+    width: 24%;
+    height: 20px;
+    margin-bottom: 20px;
+}
+.hd{
+    font-size: 20px;
+}
+.submit{
+    margin-left: 55%;
+    height: 40px;
+    background-color: rgba(68, 132, 230, 0.8);
+    color: white;
+    margin-bottom: 20px;
+}
+#dropdown{
+    margin-right: 10px;
+    height: 30px;
 }
