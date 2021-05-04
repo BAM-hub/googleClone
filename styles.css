@@ -38,6 +38,7 @@ html, body{
 #searchBarContainer{
     margin-top: 20px;
     text-align: center;
+    position: relative;
 }
 #searchBar{
     background: none;
@@ -48,10 +49,29 @@ html, body{
     border-radius: 15px;
     border: 2px solid #e4e4e4;
     cursor: unset;
+    padding-left: 2rem;
 }
 #searchBar:hover{
     box-shadow: 0 0 3px rgb(161, 161, 161);
+    
 }
+
+.search-icon, .voice-search, .image-search{
+    position: absolute;
+    top: 10%;
+    left: 3%;
+}
+
+.voice-search{
+    position: absolute;
+    top: 10%;
+    right: 3%;
+}
+
+.search-icon:hover{
+    cursor: pointer;
+}
+
 .button{
     display: flex;
     justify-content: center;
