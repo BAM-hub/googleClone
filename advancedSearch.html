@@ -24,31 +24,32 @@
             <div class="empty"></div>
             <div class="right">To do this in the search box.</div>
         </div>
+        <form action="https://www.google.com/search?as_q=q&as_epq=r&as_oq=s&as_eq=t" name="f">
         <div class="row">
             <div class="left">all these words:</div>
-            <input type="text" class="fill">
+            <input type="text" class="fill" name="as_q">
             <div class="right">Type the important words: tri-colour rat terrier</div>
         </div>
         <div class="row">
             <div class="left">this exact word or phrase:</div>
-            <input type="text" class="fill">
+            <input type="text" class="fill" name="as_epq">
             <div class="right">Put exact words in quotes: "rat terrier"</div>
         </div>
         <div class="row">
             <div class="left">any of these words:</div>
-            <input type="text" class="fill">
+            <input type="text" class="fill" name="as_oq">
             <div class="right">Type OR between all the words you want: miniature OR standard</div>
         </div>
         <div class="row">
             <div class="left">none of these words:</div>
-            <input type="text" class="fill">
+            <input type="text" class="fill" name="as_eq">
             <div class="right">Put a minus sign just before words that you don't want: -rodent, -"Jack Russell"</div>
         </div>
         <div class="row" style="border-bottom: 2px solid grey;">
             <div class="left">numbers ranging from:</div>
-            <input type="text" class="halfill">
+            <input type="text" class="halfill" name="as_nlo">
             <div class="hd">to</div>
-            <input type="text" class="halfill">
+            <input type="text" class="halfill" name="as_nhi">
             <div class="right">Put two full stops between the numbers and add a unit of measurement: 10..35 kg, £300..£500, 2010..2011
             </div>
         </div>
@@ -57,11 +58,11 @@
         </div>
         <div class="row">
             <div class="left">language:</div>
-            <select name="lang" id="dropdown" class="fill">
-                <option value="any language">Any Language</option>
+            <select name="lr" id="dropdown" class="fill">
+                <option value="">Any Language</option>
                 <option value="Afrikaans">Afrikaans</option>
                 <option value="Albanian">Albanian</option>
-                <option value="Arabic">Arabic</option>
+                <option value="lang_ar">Arabic</option>
                 <option value="Armenian">Armenian</option>
                 <option value="Basque">Basque</option>
                 <option value="Bengali">Bengali</option>
@@ -73,7 +74,7 @@
                 <option value="Czech">Czech</option>
                 <option value="Danish">Danish</option>
                 <option value="Dutch">Dutch</option>
-                <option value="English">English</option>
+                <option value="lang_en">English</option>
                 <option value="Estonian">Estonian</option>
                 <option value="Fiji">Fiji</option>
                 <option value="Finnish">Finnish</option>
@@ -89,7 +90,7 @@
                 <option value="Indonesian">Indonesian</option>
                 <option value="Irish">Irish</option>
                 <option value="Italian">Italian</option>
-                <option value="Japanese">Japanese</option>
+                <option value="lang_jpn">Japanese</option>
                 <option value="Javanese">Javanese</option>
                 <option value="Korean">Korean</option>
                 <option value="Latin">Latin</option>
@@ -137,21 +138,21 @@
         <div class="row">
             <div class="left">region:</div>
             <select name="region" id="dropdown" class="fill">
-                <option value="Any Region"> Any Region</option>
-                <option value="jo">Jordan</option>
-                <option value="SUA">Saudi Arabia</option>
+                <option value=""> Any Region</option>
+                <option value="countryJOR">Jordan</option>
+                <option value="countryJP">Japan</option>
             </select>
             <div class="right">Find pages in the language that you select.</div>
         </div>
         <div class="row">
             <div class="left">site or domain:</div>
-            <input type="text" class="fill">
+            <input type="text" class="fill" name="as_sitesearch">
             <div class="right">Search one site (like wikipedia.org ) or limit your results to a domain like .edu, .org or .gov</div>
         </div>
         <div class="row">
             <div class="left">terms appearing:</div>
-            <select name="placeinpage" id="dropdown" class="fill">
-                <option value="Anywhere in the page" >Anywhere in the page</option>
+            <select name="as_occt" id="dropdown" class="fill">
+                <option value="" >Anywhere in the page</option>
                 <option value="title">In the title of the page</option>
                 <option value="text">In the text of the page</option>
                 <option value="url">In the url of the page</option>
@@ -162,26 +163,30 @@
         <div class="row">
             <div class="left"><a href="https://support.google.com/websearch?p=adv_safesearch&hl=en">SafeSearch:</a></div>
             <select name="safe" id="dropdown" class="fill">
-                <option value="unsafe">Show explicit result</option>
-                <option value="safe">Don't Show explicit result</option>
+                <option value="">Show explicit result</option>
+                <option value="active">Don't Show explicit result</option>
             </select>
             <div class="right">Tell <a href="https://support.google.com/websearch?p=adv_safesearch&hl=en">SafeSearch</a> whether to filter sexually explicit content.</div>
         </div>
         <div class="row">
             <div class="left">file type:</div>
-            <select name="format" id="dropdown" class="fill">
-                <option value="any">Any format</option>
+            <select name="as_filetype" id="dropdown" class="fill">
+                <option value="">Any format</option>
+                <option value="pdf">PDF</option>
+                <option value="ppt">MS PowerPoint</option>
             </select>
             <div class="right">Find pages in the format that you prefer.</div>
         </div>
         <div class="row">
             <div class="left"><a href="https://support.google.com/websearch?p=ws_images_usagerights&hl=en">usage rights:</a></div>
-            <select name="usager" id="dropdown" class="fill">
-                <option value="not filterd">Not filterd by lices</option>
+            <select name="tbs" id="dropdown" class="fill">
+                <option value="">Not filterd by lices</option>
+                <option value="sur:fc">Free Use or share , even commercially</option>
             </select>
             <div class="right">Find pages that you are free to use yourself.</div>
         </div>
         <div class="row" style="border-bottom: 2px solid grey;"><input type="submit" value="google advanced search" class="submit"></div>
+    </form>
         <div class="row">
             <div class="left">You can also...</div>
         </div>
